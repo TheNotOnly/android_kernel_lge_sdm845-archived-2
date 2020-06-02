@@ -565,8 +565,7 @@ alloc_new:
 		if (bio_encrypted)
 			fscrypt_set_ice_dun(inode, bio, dun);
 		fscrypt_set_ice_skip(bio, bi_crypt_skip);
-	}
-
+}
 	if (bio_add_page(bio, page, PAGE_SIZE, 0) < PAGE_SIZE) {
 		__submit_bio(fio->sbi, bio, fio->type);
 		bio = NULL;
