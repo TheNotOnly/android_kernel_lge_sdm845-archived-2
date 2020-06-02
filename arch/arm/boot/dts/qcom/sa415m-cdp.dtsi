@@ -29,3 +29,17 @@
 		};
 	};
 };
+
+&thermal_zones {
+	mdm-core-step {
+		trips {
+			mdm-step-trip-0 {
+				temperature = <105000>;
+			};
+
+			mdm-step-trip-1 {
+				temperature = <115000>;
+			};
+		};
+	};
+};
